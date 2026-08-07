@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* header */
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 22px;
+    height: 110px;
+}
+
+.left-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.7rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+li:hover {
+
+    color: rgb(20, 137, 146);
+}
+
+.lione {
+    list-style: none;
+    color: rgb(20, 137, 146);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.right-header span {
+    cursor: pointer;
+}
+
+.right-header i {
+    font-size: 25px;
+    /* cursor: pointer;1 */
+}
+
+.right-header .phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+}
+
+.right-header .phone:hover {
+    color: rgb(20, 137, 146);
+}
+
+.right-header .phone i {
+    font-size: 18px;
+}
+
+.right-header .phone p {
+    list-style: none;
+    color: #1A1A1A;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right-header .phone:hover p {
+    color: rgb(20, 137, 146);
+
+}
+
+.right-header button.buttonreuest {
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: rgb(20, 137, 146);
+}
+
+.right-header button.buttonreuest:hover {
+    background-color: #063336;
+}
+
+/* hero -section */
+.main-hero {
+    background-image: url('/images/merch-husey-EEZgog4AS5M-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    background-color: black;
+    height: 70vh;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    /* margin-bottom: 10rem; */
+}
+
+.main-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    width: 97%;
+    margin: 0 auto;
+    padding-right: 25rem;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    line-height: 84px;
+    font-weight: 700;
+    color: white;
+    z-index: 11;
+}
+
+/*  input-hero-section */
+.main-for-inputsfields {
+    background-color: #FFFFFF;
+    width: 97%;
+    margin: 0 auto;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+    padding: 35px 25px;
+    z-index: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.location-maininput,
+.Adult-maininput {
+    flex: 1;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    gap: 15px;
+}
+
+.location-maininput input {
+    border: none;
+}
+
+.location-maininput i {
+    font-size: 22px;
+    color: #07152D;
+}
+
+.booking-filed {
+    position: relative;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-right: 90px;
+    font-size: 16px;
+    color: #A5AAB3;
+    cursor: pointer;
+}
+
+.main-for-inputsfields button.buttonreuest {
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    align-items: center;
+    background-color: rgb(20, 137, 146);
+    z-index: 22;
+    position: relative;
+}
+
+.main-for-inputsfields button.buttonreuest:hover {
+    background-color: #063336;
+}
+/* Properties Grid Layout */
+.Properties-Grid-Layout-main{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin: 0 auto;
+}
+.Properties-Grid-Layout-topcontent{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-properties-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    gap: 3px;
+}
+.home-properties-grid a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+.home-properties-grid a:hover{
+    color: #148992;
+}
+.home-properties-grid .para{
+    color: #148992;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 700;
+}
+.home-properties-heading{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 15px 0;
+}
+.home-properties-heading h1{
+    font-size: 36px;
+    line-height: 43px;
+    font-family: 700;
+    color: rgb(26, 26, 26);
+    text-align: left;
+}
+.tooutofproperties{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.tooutofproperties .left-side{
+    flex: 1;
+    margin: 0 auto;
+}
+.tooutofproperties .left-side p{
+    color: #808080;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 600;
+}
+.tooutofproperties .right-side{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tooutofproperties .right-side p{
+    color: #808080;
+    font-size: 13px;
+    line-height: 13px;
+    font-family: 600;   
+}
+.tooutofproperties .right-side .fa-table-cells-large{
+    font-size: 28px;
+    cursor: pointer;
+    color: #148992;
+}
+.tooutofproperties .right-side .fa-bars-staggered{
+    color: #808080;
+    font-size: 28px;
+    transition: 0.3s ease;
+}
+.tooutofproperties .right-side .fa-bars-staggered:hover{
+    color: #148992;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* reservation-section */
+.reservation-section {
+    position: relative;
+    width: 100%;
+    background: url("/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    z-index: 9;
+}
+
+.reservation-container {
+    width: 97%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservation-content {
+    flex: 1;
+    max-width: 480px;
+}
+
+.reservation-content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.reservation-content p {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.booking-card {
+    width: 600px;
+    margin-top: 10rem;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -80px;
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .15);
+}
+
+.booking-card h2 {
+    font-size: 30px;
+    color: rgb(7, 21, 45);
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.booking-card p {
+    color: rgb(7, 21, 45);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.booking-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-row {
+    display: flex;
+    gap: 18px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #07152D;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    outline: none;
+    background: #fff;
+    padding-left: 52px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #A5AAB3;
+    transition: .3s;
+}
+
+.form-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #148992;
+}
+
+.booking-btn {
+    color: white;
+    width: 50%;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    align-items: center;
+    background-color: rgb(20, 137, 146);
+    z-index: 22;
+    position: relative;
+}
+
+.booking-btn:hover {
+    background-color: #063336;
+}
